@@ -8,7 +8,7 @@ This question, usually followed by looking at a couple top DPS rankings <sup>(re
 
 For instance, relatively easy sources of extra DPS that one can use for "min-maxing" <sup>(WCL parsing approved✅)</sup> such as tailoring cloth-crafting buffs, pre-summoning guardians, or receiving external buffs (Power Infusion, Focus Magic, among others) should always be a (personal) DPS increase, and you might see them being used in **__"some"__** or **__"most"__** of the top rankings. However, this won't always be the case.
 
-<img src="_img/tentacle_weave.png" /><br />
+<img src="_img/tentacle_weave.jpg" /><br />
 *Figure 1: May I introduce you to my lord and savior, Vanquished Clutches of Yogg-Saron?*
 
 You don't **__"need"__** these things to have a higher DPS (you probably have other things you can improve on first), but in some cases, having some of these extra buffs will make it __more likely__ for you to "parse".
