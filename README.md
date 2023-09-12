@@ -4,11 +4,11 @@ _Vivax (Pagle-US) -_ `Discfordge` _(Discord)_
 
 > "What are the top DPS rankings for my class doing?"
 
-This question, usually followed by looking at a couple top DPS logs <sup>(read: "Top parses" or "Top rankings")</sup> for your boss of preference, will lead to wildly over-represent what is not always proper examples of "good class-specific gameplay", nor that of class-specific *min-maxing* (regardless of it being personal (selfish) *min-maxing* or not). 
+This question, usually followed by looking at a couple top DPS logs <sup>(read: "Top parses" or "Top rankings")</sup> for your boss of preference, will lead to wildly over-represent what is not always proper examples of "good"" class-specific gameplay, nor that of class-specific *min-maxing*.<sub>(regardless of it being personal/selfish *min-maxing* or not).</sub> 
 
 > "Wait, why is the #1 DPS on Gigachad not enchanted? What?"
 
-For example: Easy things one can do for higher DPS <sup>(WCL parsing approved✅)</sup> such as using tailoring cloth-crafting buffs, pre-summoning guardians, or receiving external buffs (Power Infusion, Focus Magic, among others) should always be a DPS increase <sub>*minor or major*</sub>, and you will see them being used in **__"some"__** of the top rankings logs. However, this won't always be the case.
+For example: Easy <sub>but *min-maxing*/"sweaty"</sub> things one can do for higher DPS <sup>(WCL parsing approved✅)</sup> such as using tailoring cloth-crafting buffs, pre-summoning guardians, or receiving external buffs (Power Infusion, Focus Magic, among others) should always be a DPS increase <sub>*minor or major*</sub>, and you will see them being used in **__"some"__** of the top rankings logs. However, this won't always be the case.
 
 <img src="_img/tentacle_weave_resize.jpg" /><br />
 *Figure 1: My brother in Thrall, may I introduce you to my lord and savior, Vanquished Clutches of Yogg-Saron?*
