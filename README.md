@@ -11,7 +11,7 @@ For example: Easy things one can do for higher DPS <sup>(WCL parsing approved✅
 <img src="_img/tentacle_weave_resize.jpg" /><br />
 *Figure 1: My brother in Thrall, may I introduce you to my lord and savior, Vanquished Clutches of Yogg-Saron?*
 
-You don't **__"need"__** these things to have a higher DPS (you probably have other things you can improve on first), however adding to your DPS (*min-maxing*) with some of these extra buffs will make it __more likely__ for you to have a higher DPS than what would have been possible without any of them.
+You don't **__"need"__** these things to have a higher DPS (you probably have other things with much more impact that you should improve on first), however adding to your DPS (*min-maxing*) with some of these extra buffs will make it __more likely__ for you to have a higher DPS than what would have been possible without any of them.
 
 <img src="_img/little_friends.jpg" /><br />
 *Figure 2: ~170 DPS over a 2:22 minutes fight? Sounds good to me, idk about you<br />Source: https://classic.warcraftlogs.com/reports/a:bBYJa6GTdQrMm8y2#fight=3&type=damage-done&source=8*
