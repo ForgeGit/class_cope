@@ -4,7 +4,7 @@ _Vivax (Pagle-US) -_ `Discfordge` _(Discord)_
 
 > "What are the top DPS rankings for my class doing?"
 
-This question, usually followed by looking at a couple top DPS rankings <sup>(read: "Top parses"" or "Top logs")</sup> for your boss of preference, will wildly over-represents what is not always a proper representation of "good class-specific gameplay", nor that of class-specific *min-maxing* (regardless of it being personal (selfish) *min-maxing* or not). 
+This question, usually followed by looking at a couple top DPS logs <sup>(read: "Top parses" or "Top rankings")</sup> for your boss of preference, will lead to wildly over-represent what is not always a proper representation of "good class-specific gameplay", nor that of class-specific *min-maxing* (regardless of it being personal (selfish) *min-maxing* or not). 
 
 For instance, relatively easy sources of extra DPS that one can use for "min-maxing" <sup>(WCL parsing approved✅)</sup> such as tailoring cloth-crafting buffs, pre-summoning guardians, or receiving external buffs (Power Infusion, Focus Magic, among others) should always be a (personal) DPS increase <sub>*minor or major*</sub>, and you might see them being used in **__"some"__** of the top rankings. However, this won't always be the case.
 
