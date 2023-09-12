@@ -13,14 +13,14 @@ For example: Easy <sub>but *"extra"*</sub> things one can do for higher DPS <sup
 <img src="_img/tentacle_weave_resize.jpg" /><br />
 *Figure 1: My brother in Thrall, may I introduce you to my lord and savior, Vanquished Clutches of Yogg-Saron?*
 
-You don't **__"need"__** these things to have a higher DPS (you probably have other much more impactful things that you should fix first), however adding to your DPS (*min-maxing*) with some of these extra buffs will make it __more likely__ for you to have a higher DPS than what would have been possible without any of them.
+You don't **__"need"__** these things to have a higher DPS (you probably have other much more important things that you should fix first), however you could add to your DPS (*min-maxing*) with some of these extra buffs, which will make it __more likely__ for you to have a higher DPS than what would have been possible without any of them. <sub>*(until a bad RNG and bad proc lineup makes you call for a wipe)*</sub>
 
 <img src="_img/little_friends.jpg" /><br />
 *Figure 2: ~170 DPS over a 2:22 minutes fight? Sounds good to me, idk about you<br />Source: https://classic.warcraftlogs.com/reports/a:bBYJa6GTdQrMm8y2#fight=3&type=damage-done&source=8*
 
-MORE BUFFS = MORE POSSIBLE DPS = MORE LIKELY TO PARSE <sub>*(until a bad RNG and bad proc lineup makes you call for a wipe)*</sub>
+It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies might be more obvious than other, and usually rely on "manually checking logs".
 
-A lot of the time some of the things you see in top parses would also be impossible for your own raid-conditions.<br />For example, class-stacking sometimes is needed to meet specific DPS threshold to skip entire mechanics or boss phases.
+A lot of the time some of the things you see in top parses would be impossible for the average raid-comp.<br />For example, class-stacking sometimes is needed to meet specific DPS threshold to skip entire mechanics or boss phases.
 
 <img src="_img/rogue_stack_twins.png" /><br />
 *Figure 3: Example of a "normal" raid comp for Twins Valk'yr: https://classic.warcraftlogs.com/reports/yn72Dgwq3fc41d9B#fight=30&type=damage-done<br/>Shared by Simonize in his discord*
