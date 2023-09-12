@@ -467,6 +467,56 @@ write.csv(df_cope_affli_dmg,
 
 ```
 
+#### -Affli Casts
+
+```{r}
+request_logs_code <- sprintf(request_casts_str,
+                             logID_affliplayer_unique_cope$logID,
+                             logID_affliplayer_unique_cope$fightID,
+                             logID_affliplayer_unique_cope$sourceID)
+
+n_loop <- length(request_logs_code)
+
+output <- lapply(1:n_loop, function(i) {
+  
+  response <- WCL_API2_request(request_logs_code[i]
+  )$data$reportData$report$events$data
+  
+  if (!is.null(response)) {
+    response <- response %>%
+      mutate(logID = logID_affliplayer_unique_cope$logID[i],
+             fightID = fight,
+             sourceID = logID_affliplayer_unique_cope$sourceID[i])
+  } else {
+    response <- data.frame(timestamp = -1,
+                           type  = "NULL",
+                           sourceID = logID_affliplayer_unique_cope$sourceID[i],
+                           targetID= 0,
+                           logID = logID_affliplayer_unique_cope$logID[i],
+                           abilityGameID = 0,
+                           fightID = logID_affliplayer_unique_cope$fightID[i],
+                           buffs="NULL",
+                           hitType=-1,
+                           amount=-1,
+                           tick=NA)
+  }
+  
+  if (i %% 25 == 0) {
+    cat("Processed log",i, "out of", n_loop,"\n")
+  }
+  
+  return(response)
+})
+
+df_cope_affli_casts <- do.call(bind_rows, output)
+df_cope_affli_casts <- df_cope_affli_casts %>% clean_names() %>% select(-c(class_resources))
+
+write.csv(df_cope_affli_casts,
+          paste0("df_cope_affli_casts",format(Sys.time(), 
+                                      "%Y_%m_%d_h%H_m%M"),".csv"))
+
+```
+
 ### - Spriest
 
 #### +Spriest Rankings
@@ -673,7 +723,7 @@ output <- lapply(1:n_loop, function(i) {
 })
 
 df_cope_spriest_dmg <- do.call(bind_rows, output)
-df_cope_spriest_dmg <- df_cope_spriest_dmg %>% clean_names() %>% select(-c(class_resources))
+#df_cope_spriest_dmg <-# df_cope_spriest_dmg %>% clean_names() %>% select(-c(class_resources))
 
 write.csv(df_cope_spriest_dmg,
           paste0("df_cope_spriest_dmg_",format(Sys.time(), 
@@ -682,5 +732,49 @@ write.csv(df_cope_spriest_dmg,
 ```
 
 
+#### -Spriest Casts
+
+```{r}
+n_loop <- length(request_logs_code)
+
+output <- lapply(1:n_loop, function(i) {
+  
+  response <- WCL_API2_request(request_logs_code[i]
+  )$data$reportData$report$events$data
+  
+  if (!is.null(response)) {
+    response <- response %>%
+      mutate(logID = logID_spriestplayer_unique_cope$logID[i],
+             fightID = fight,
+             sourceID = logID_spriestplayer_unique_cope$sourceID[i])
+  } else {
+    response <- data.frame(timestamp = -1,
+                           type  = "NULL",
+                           sourceID = logID_spriestplayer_unique_cope$sourceID[i],
+                           targetID= 0,
+                           logID = logID_spriestplayer_unique_cope$logID[i],
+                           abilityGameID = 0,
+                           fightID = logID_spriestplayer_unique_cope$fightID[i],
+                           buffs="NULL",
+                           hitType=-1,
+                           amount=-1,
+                           tick=NA)
+  }
+  
+  if (i %% 25 == 0) {
+    cat("Processed log",i, "out of", n_loop,"\n")
+  }
+  
+  return(response)
+})
+
+df_cope_spriest_casts <- do.call(bind_rows, output)
+df_cope_spriest_casts <- df_cope_spriest_casts %>% clean_names() %>% select(-c(class_resources))
+
+write.csv(df_cope_spriest_casts,
+          paste0("df_cope_spriest_casts_",format(Sys.time(), 
+                                      "%Y_%m_%d_h%H_m%M"),".csv"))
+
+```
 
 
