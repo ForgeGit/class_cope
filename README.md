@@ -18,12 +18,14 @@ You don't **__"need"__** these things to have a higher DPS (you probably have ot
 
 MORE BUFFS = MORE POSSIBLE DPS = MORE LIKELY TO PARSE <sub>*(until a bad RNG and bad proc lineup makes you call for a wipe)*</sub>
 
-A lot of the time some of the things you see in top parses would also be impossible for your own raid-conditions. For example, class-stacking sometimes is needed to meet specific DPS threshold to skip entire mechanics or boss phases.
+A lot of the time some of the things you see in top parses would also be impossible for your own raid-conditions.<br />For example, class-stacking sometimes is needed to meet specific DPS threshold to skip entire mechanics or boss phases.
 
 <img src="_img/rogue_stack_twins.png" /><br />
 *Figure 3: Example of a "normal" raid comp for Twins Valk'yr: https://classic.warcraftlogs.com/reports/yn72Dgwq3fc41d9B#fight=30&type=damage-done<br/>Shared by Simonize in his discord*
 
-Back in World of Warcraft: Classic - The Burning Crusade (TBC), when you could stack lust one after another, you could see some top rankings stacking externals. While not necessarily the "majority", in some cases this was done to "compensate"" for lack of skill or better raiders. <sub>~~Or you could say that maybe a lot of logs are massively AI generated and we don't know~~</sub>
+Back in World of Warcraft: Classic - The Burning Crusade (TBC), when you could stack lust one after another, you would see some top rankings stacking externals. 
+
+While not necessarily the "majority", in some cases this was done to "compensate"" for lack of skill or better raiders. <sub>~~Or you could say that maybe a lot of logs are massively AI generated and we don't know~~</sub>
 
 <img src="_img/externals_TBC.png" /><br />
 *Figure 4: You may not like it, but this is what peak TBC parsing looks like*
