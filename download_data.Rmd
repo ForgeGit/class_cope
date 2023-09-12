@@ -1,0 +1,686 @@
+---
+title: "Download Environment"
+output: html_document
+date: "2023-09-11"
+---
+
+## Settings 
+
+### -Libraries
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+
+options(scipen = 100)
+options(Encoding="UTF-8")
+#install.packages("viridis")  # Install
+#install.packages(c("httr", "jsonlite","tidyverse","gtsummary","gghighlight"))
+library(httr)
+library(jsonlite)
+library(tidyverse)
+library(gtsummary)
+library(gghighlight)
+library(png)
+library(grid)
+library("viridis") 
+library(ggplot2)
+library(showtext)
+#> Loading required package: sysfonts
+#> Loading required package: showtextdb
+library(ggrepel)
+library(cowplot)
+library(ggtext)
+library(extrafont)
+library(scales)
+library(ggridges)
+library(janitor)
+library(magick)
+library("jpeg")
+library("zoo")
+```
+
+
+
+
+## Auth Token request
+
+```{r}
+## Run once
+# token <- POST("https://www.warcraftlogs.com/oauth/token",
+#           config = list(),
+#           body = list(
+#             grant_type="client_credentials",
+#             client_id=Sys.getenv("client_id"),
+#             client_secret=Sys.getenv("client_secret")))
+# 
+# token <- content(token,"parsed")
+# 
+# Manually copy token to .env file and load locally
+```
+
+```{r}
+token <- Sys.getenv("TOKEN")
+
+url <- "https://classic.warcraftlogs.com/api/v2"
+
+WCL_API2_request <- function(request) {
+  
+  request <- jsonlite::toJSON(list(query=request),
+                              auto_unbox=TRUE,
+                              bigint_as_char=F)
+  
+  response <- POST(url,
+                   add_headers("Content-Type" = "application/json",
+                               "Authorization"= paste0("Bearer ",
+                                                       token)),
+                   body = request,
+                   content_type_json(),
+                   encode = "json")
+  
+  response_formated <- fromJSON(content(response,
+                                        as = "text",
+                                        encoding="UTF-8"),
+                                bigint_as_char=TRUE)
+  
+  return(response_formated)
+}
+
+
+
+```
+
+## Requests
+
+### - mage rankings
+
+```{r}
+request <-'{
+   worldData{
+       zone(id: %i){
+           encounters{
+           journalID,
+               name,
+               characterRankings(metric:dps, className:"Mage", page: %i)
+               fightRankings(metric:speed, page: %i)
+           }
+       }
+   }
+   }'
+
+add_id_column <- function(df,response, id) {
+  df %>% mutate(List_ID = response[id,2]) 
+}
+```
+
+### - affli rankings
+
+```{r}
+request_lock_affli <-'{
+   worldData{
+       zone(id: %i){
+           encounters{
+           journalID,
+               name,
+               characterRankings(metric:dps, className:"Warlock",specName:"Affliction", page: %i)
+               fightRankings(metric:speed, page: %i)
+           }
+       }
+   }
+   }'
+
+```
+
+
+### - spriests rankings
+
+```{r}
+request_priest_shadow <-'{
+   worldData{
+       zone(id: %i){
+           encounters{
+           journalID,
+               name,
+               characterRankings(metric:dps, className:"Priest",specName:"Shadow", page: %i)
+               fightRankings(metric:speed, page: %i)
+           }
+       }
+   }
+   }'
+
+```
+
+
+### player data for logs
+
+```{r}
+request_player_str <-     '{
+    reportData {
+        report(code: "%s") {
+            masterData(translate: true) {
+                actors(type: "player"){
+          
+                gameID
+                id
+                name
+                server
+                subType
+                
+                }
+        }
+    }
+}}'
+```
+
+
+
+### buffs events
+
+```{r}
+request_buffs_str <- '{
+    reportData {
+        report(code: "%s") {
+            events(dataType:Buffs
+                  killType:Encounters
+                  hostilityType:Friendlies
+                  fightIDs:%i
+                  sourceID:%i
+                  startTime: 0
+                  endTime: 999999999999
+                  includeResources: true){
+              data
+              nextPageTimestamp
+              }
+            }
+        }
+        }'
+```
+
+
+
+### Damage events
+
+```{r}
+request_dmg_str <- '{
+    reportData {
+        report(code: "%s") {
+            events(dataType:DamageDone
+                  killType:Encounters
+                  hostilityType:Friendlies
+                  fightIDs:%i
+                  sourceID:%i
+                  startTime: 0
+                  endTime: 999999999999
+                  includeResources: true){
+              data
+              nextPageTimestamp
+              }
+            }
+        }
+        }'
+```
+
+
+### Casts events
+
+```{r}
+request_casts_str <- '{
+    reportData {
+        report(code: "%s") {
+            events(dataType:Casts
+                  killType:Encounters
+                  hostilityType:Friendlies
+                  fightIDs:%i
+                  sourceID:%i
+                  startTime: 0
+                  endTime: 999999999999
+                  includeResources: true){
+              data
+              nextPageTimestamp
+              }
+            }
+        }
+        }'
+```
+
+
+
+
+## Download data
+
+
+### - Warlock
+
+#### +Rankings
+
+```{r}
+range <- 1:3
+
+request_logs_code <- sprintf(request_lock_affli,1018, range, range)
+
+output <- lapply(range, function(k) {
+
+response <- WCL_API2_request(request_logs_code[k]
+    )$data$worldData$zone$encounters
+
+
+    df_list_with_id <- lapply(1:nrow(response), function(i) {
+      output <- do.call(bind_rows, response$characterRankings$rankings[[i]]) %>%
+        add_id_column(., response,i) %>%
+        mutate(List_page = k) %>%
+        do.call(bind_cols, .)
+    })
+
+    if (k %% 1 == 0) {
+      cat("Processed page",k, "out of", length(range), " - Part 1 \n")
+    }
+
+    return(do.call(bind_rows,df_list_with_id))
+
+})
+
+
+
+df_cope_affli_ranking <- do.call(bind_rows, output)
+
+write.csv(df_cope_affli_ranking,paste0("df_cope_affli_ranking_",format(Sys.time(), "%Y_%m_%d_h%H_m%M"),".csv"))
+```
+
+##### *Quick-Process Rankings (Affliction)
+
+```{r}
+df_cope_affli_ranking <- read.csv("response_logs_code_df_COPE_lock2023_09_11_h01_m37.csv")
+
+df_cope_affli_ranking<- df_cope_affli_ranking %>%
+  clean_names() %>%
+  rename(character_name = name_1,
+         dps = amount,
+         logID=code,
+         fightID=fight_id,
+         logStartTime = start_time_10,
+         fightStartTime = start_time_7,
+         guildID = id_11,
+         serverID = id_14#,
+         #server = name_24
+  ) %>%
+  mutate(duration_s=duration/1000,
+         list_id = factor(list_id,levels=unique(df_cope$List_ID))) %>%
+  group_by(list_id) %>%
+  mutate(rank_boss = row_number()) %>%
+  ungroup()%>%
+  mutate(cat_ranking =  ifelse(rank_boss<=100,"Top-100","200-500"),
+         cat_ranking = factor(cat_ranking,levels=c("Top-100","200-500")))
+```
+
+#### -Download log Player (Affliction)
+
+```{r}
+logID_unique_cope <- unique(df_cope_affli_ranking$logID)
+request_logs_code <- sprintf(request_player_str,logID_unique_cope)
+n_loop <- length(request_logs_code)
+```
+
+
+```{r}
+output <- lapply(1:n_loop, function(i) {
+
+  response <- WCL_API2_request(request_logs_code[i]
+  )$data$reportData$report$masterData$actors
+
+
+
+  if (!is.null(response)) {
+    response <- response %>%
+      mutate(logID = logID_unique_cope[i])
+  } else {
+    response <- data.frame(gameID = 0,
+                           id = 0,
+                           name = "NULL",
+                           server = "NULL",
+                           subType="NULL",
+                           logID = logID_unique_cope[i])
+  }
+
+  if (i %% 25 == 0) {
+    cat("Processed log",i, "out of", n_loop,"\n")
+  }
+
+  return(response)
+})
+
+df_cope_affli_logplayers <- do.call(bind_rows, output)
+
+write.csv(df_cope_affli_logplayers,paste0("df_cope_affli_logplayers_",format(Sys.time(), "%Y_%m_%d_h%H_m%M"),".csv"))
+```
+
+
+```{r}
+df_cope_affli_master <- df_cope_affli_ranking %>% 
+  left_join(df_cope_affli_logplayers, 
+            by=c("logID",
+                 "character_name"="name",
+                 # "server",
+                 "class"="subType")) %>%
+  rename(sourceID = id) 
+
+logID_affliplayer_unique_cope <- df_cope_affli_master  %>% 
+  group_by(logID,fightID,sourceID) %>%
+  summarise(n=n())
+```
+
+#### -Download Buffs (Affliction)
+
+
+```{r}
+request_logs_code <- sprintf(request_buffs_str,
+                             logID_affliplayer_unique_cope$logID,
+                             logID_affliplayer_unique_cope$fightID,
+                             logID_affliplayer_unique_cope$sourceID)
+
+n_loop <- length(request_logs_code)
+```
+
+
+#### -Affliction Buffs
+
+```{r}
+output <- lapply(1:n_loop, function(i) {
+  
+  response <- WCL_API2_request(request_logs_code[i]
+  )$data$reportData$report$events$data
+  
+  if (!is.null(response)) {
+    response <- response %>%
+      mutate(logID = logID_affliplayer_unique_cope$logID[i],
+             fightID = fight,
+             sourceID = logID_affliplayer_unique_cope$sourceID[i])
+  } else {
+    response <- data.frame(timestamp = -1,
+                           type  = "NULL",
+                           sourceID = logID_affliplayer_unique_cope$sourceID[i],
+                           targetID= 0,
+                           logID = logID_affliplayer_unique_cope$logID[i],
+                           abilityGameID = 0,
+                           fightID = logID_affliplayer_unique_cope$fightID[i],
+                           stack=0)
+  }
+  
+  if (i %% 25 == 0) {
+    cat("Processed log",i, "out of", n_loop,"\n")
+  }
+  
+  return(response)
+})
+
+df_cope_affli_buffs <- do.call(bind_rows, output)
+
+write.csv(df_cope_affli_buffs,paste0("df_cope_affli_buffs",format(Sys.time(), "%Y_%m_%d_h%H_m%M"),".csv"))
+
+```
+
+#### -Affli damage
+
+```{r}
+request_logs_code <- sprintf(request_dmg_str,
+                             logID_affliplayer_unique_cope$logID,
+                             logID_affliplayer_unique_cope$fightID,
+                             logID_affliplayer_unique_cope$sourceID)
+
+n_loop <- length(request_logs_code)
+
+output <- lapply(1:n_loop, function(i) {
+  
+  response <- WCL_API2_request(request_logs_code[i]
+  )$data$reportData$report$events$data
+  
+  if (!is.null(response)) {
+    response <- response %>%
+      mutate(logID = logID_affliplayer_unique_cope$logID[i],
+             fightID = fight,
+             sourceID = logID_affliplayer_unique_cope$sourceID[i])
+  } else {
+    response <- data.frame(timestamp = -1,
+                           type  = "NULL",
+                           sourceID = logID_affliplayer_unique_cope$sourceID[i],
+                           targetID= 0,
+                           logID = logID_affliplayer_unique_cope$logID[i],
+                           abilityGameID = 0,
+                           fightID = logID_affliplayer_unique_cope$fightID[i],
+                           buffs="NULL",
+                           hitType=-1,
+                           amount=-1,
+                           tick=NA)
+  }
+  
+  if (i %% 25 == 0) {
+    cat("Processed log",i, "out of", n_loop,"\n")
+  }
+  
+  return(response)
+})
+
+df_cope_affli_dmg <- do.call(bind_rows, output)
+df_cope_affli_dmg <- df_cope_affli_dmg %>% clean_names() %>% select(-c(class_resources))
+
+write.csv(df_cope_affli_dmg,
+          paste0("df_cope_affli_dmg",format(Sys.time(), 
+                                      "%Y_%m_%d_h%H_m%M"),".csv"))
+
+```
+
+### - Spriest
+
+#### +Spriest Rankings
+
+```{r}
+range <- 1:3
+
+request_logs_code <- sprintf(request_priest_shadow,1018, range, range)
+
+output <- lapply(range, function(k) {
+
+response <- WCL_API2_request(request_logs_code[k]
+    )$data$worldData$zone$encounters
+
+
+    df_list_with_id <- lapply(1:nrow(response), function(i) {
+      output <- do.call(bind_rows, response$characterRankings$rankings[[i]]) %>%
+        add_id_column(., response,i) %>%
+        mutate(List_page = k) %>%
+        do.call(bind_cols, .)
+    })
+
+    if (k %% 1 == 0) {
+      cat("Processed page",k, "out of", length(range), " - Part 1 \n")
+    }
+
+    return(do.call(bind_rows,df_list_with_id))
+
+})
+
+
+
+df_cope_spriest_ranking <- do.call(bind_rows, output)
+
+write.csv(df_cope_spriest_ranking,paste0("./raw_data/","df_cope_spriest_ranking_",format(Sys.time(), "%Y_%m_%d_h%H_m%M"),".csv"))
+```
+
+##### *Quick-Process Rankings (Spriest)
+
+```{r}
+df_cope_spriest_ranking <- read.csv("raw_data/df_cope_spriest_ranking_2023_09_12_h14_m06.csv")
+
+df_cope_spriest_ranking<- df_cope_spriest_ranking %>%
+  clean_names() %>%
+  rename(character_name = name_1,
+         dps = amount,
+         logID=code,
+         fightID=fight_id,
+         logStartTime = start_time_10,
+         fightStartTime = start_time_7,
+         guildID = id_11,
+         serverID = id_14#,
+         #server = name_24
+  ) %>%
+  mutate(duration_s=duration/1000,
+         list_id = factor(list_id,levels=unique(df_cope_spriest_ranking$List_ID))) %>%
+  group_by(list_id) %>%
+  mutate(rank_boss = row_number()) %>%
+  ungroup()%>%
+  mutate(cat_ranking =  ifelse(rank_boss<=100,"Top-100","200-500"),
+         cat_ranking = factor(cat_ranking,levels=c("Top-100","200-500")))
+```
+
+#### -Download log Player (Spriest)
+
+```{r}
+logID_unique_cope <- unique(df_cope_spriest_ranking$logID)
+request_logs_code <- sprintf(request_player_str,logID_unique_cope)
+n_loop <- length(request_logs_code)
+```
+
+
+```{r}
+output <- lapply(1:n_loop, function(i) {
+
+  response <- WCL_API2_request(request_logs_code[i]
+  )$data$reportData$report$masterData$actors
+
+
+
+  if (!is.null(response)) {
+    response <- response %>%
+      mutate(logID = logID_unique_cope[i])
+  } else {
+    response <- data.frame(gameID = 0,
+                           id = 0,
+                           name = "NULL",
+                           server = "NULL",
+                           subType="NULL",
+                           logID = logID_unique_cope[i])
+  }
+
+  if (i %% 25 == 0) {
+    cat("Processed log",i, "out of", n_loop,"\n")
+  }
+
+  return(response)
+})
+
+df_cope_spriest_logplayers <- do.call(bind_rows, output)
+
+write.csv(df_cope_spriest_logplayers,paste0("./raw_data/","df_cope_spriest_logplayers_",format(Sys.time(), "%Y_%m_%d_h%H_m%M"),".csv"))
+```
+
+
+```{r}
+df_cope_spriest_master <- df_cope_spriest_ranking %>% 
+  left_join(df_cope_spriest_logplayers, 
+            by=c("logID",
+                 "character_name"="name",
+                 # "server",
+                 "class"="subType")) %>%
+  rename(sourceID = id) 
+
+logID_spriestplayer_unique_cope <- df_cope_spriest_master  %>% 
+  group_by(logID,fightID,sourceID) %>%
+  summarise(n=n())
+```
+
+#### -Download Buffs (Spriest)
+
+
+```{r}
+request_logs_code <- sprintf(request_buffs_str,
+                             logID_spriestplayer_unique_cope$logID,
+                             logID_spriestplayer_unique_cope$fightID,
+                             logID_spriestplayer_unique_cope$sourceID)
+
+n_loop <- length(request_logs_code)
+```
+
+
+#### -Spriest Buffs
+
+```{r}
+output <- lapply(1:n_loop, function(i) {
+  
+  response <- WCL_API2_request(request_logs_code[i]
+  )$data$reportData$report$events$data
+  
+  if (!is.null(response)) {
+    response <- response %>%
+      mutate(logID = logID_spriestplayer_unique_cope$logID[i],
+             fightID = fight,
+             sourceID = logID_spriestplayer_unique_cope$sourceID[i])
+  } else {
+    response <- data.frame(timestamp = -1,
+                           type  = "NULL",
+                           sourceID = logID_spriestplayer_unique_cope$sourceID[i],
+                           targetID= 0,
+                           logID = logID_spriestplayer_unique_cope$logID[i],
+                           abilityGameID = 0,
+                           fightID = logID_spriestplayer_unique_cope$fightID[i],
+                           stack=0)
+  }
+  
+  if (i %% 25 == 0) {
+    cat("Processed log",i, "out of", n_loop,"\n")
+  }
+  
+  return(response)
+})
+
+df_cope_spriests_buffs <- do.call(bind_rows, output)
+
+write.csv(df_cope_spriests_buffs,paste0("df_cope_spriests_buffs_",format(Sys.time(), "%Y_%m_%d_h%H_m%M"),".csv"))
+
+```
+
+#### -Spriest damage
+
+```{r}
+n_loop <- length(request_logs_code)
+
+output <- lapply(1:n_loop, function(i) {
+  
+  response <- WCL_API2_request(request_logs_code[i]
+  )$data$reportData$report$events$data
+  
+  if (!is.null(response)) {
+    response <- response %>%
+      mutate(logID = logID_spriestplayer_unique_cope$logID[i],
+             fightID = fight,
+             sourceID = logID_spriestplayer_unique_cope$sourceID[i])
+  } else {
+    response <- data.frame(timestamp = -1,
+                           type  = "NULL",
+                           sourceID = logID_spriestplayer_unique_cope$sourceID[i],
+                           targetID= 0,
+                           logID = logID_spriestplayer_unique_cope$logID[i],
+                           abilityGameID = 0,
+                           fightID = logID_spriestplayer_unique_cope$fightID[i],
+                           buffs="NULL",
+                           hitType=-1,
+                           amount=-1,
+                           tick=NA)
+  }
+  
+  if (i %% 25 == 0) {
+    cat("Processed log",i, "out of", n_loop,"\n")
+  }
+  
+  return(response)
+})
+
+df_cope_spriest_dmg <- do.call(bind_rows, output)
+df_cope_spriest_dmg <- df_cope_spriest_dmg %>% clean_names() %>% select(-c(class_resources))
+
+write.csv(df_cope_spriest_dmg,
+          paste0("df_cope_spriest_dmg_",format(Sys.time(), 
+                                      "%Y_%m_%d_h%H_m%M"),".csv"))
+
+```
+
+
+
+
