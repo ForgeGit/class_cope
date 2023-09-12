@@ -4,7 +4,7 @@ _Vivax (Pagle-US) -_ `Discfordge` _(Discord)_
 
 > "What are the top DPS rankings for my class doing?"
 
-This question, usually followed by looking at a couple top DPS logs <sup>(read: "Top parses" or "Top rankings")</sup> for your boss of preference, will lead to wildly over-represent what is not always proper examples of "good"" class-specific gameplay, nor that of class-specific *min-maxing*.<sub>(regardless of it being personal/selfish *min-maxing* or not).</sub> 
+This question, usually followed by looking at a couple top DPS logs <sup>(read: "Top parses" or "Top rankings")</sup> for your boss of preference, will lead to wildly over-represent what is not always proper examples of "good" class-specific gameplay, nor that of class-specific *min-maxing*.<sub>(regardless of it being personal/selfish *min-maxing* or not).</sub> 
 
 > "Wait, why is the #1 DPS on Gigachad not enchanted? What?"
 
