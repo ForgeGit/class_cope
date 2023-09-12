@@ -8,7 +8,7 @@ This question, usually followed by looking at a couple top DPS logs <sup>(read: 
 
 For example: Easy things one can do for higher DPS <sup>(WCL parsing approved✅)</sup> such as using tailoring cloth-crafting buffs, pre-summoning guardians, or receiving external buffs (Power Infusion, Focus Magic, among others) should always be a DPS increase <sub>*minor or major*</sub>, and you will see them being used in **__"some"__** of the top rankings logs. However, this won't always be the case.
 
-<img src="_img/tentacle_weave.jpg" /><br />
+<img src="_img/tentacle_weave_resize.jpg" /><br />
 *Figure 1: My brother in Thrall, may I introduce you to my lord and savior, Vanquished Clutches of Yogg-Saron?*
 
 You don't **__"need"__** these things to have a higher DPS (you probably have other things you can improve on first), however adding to your DPS (*min-maxing*) with some of these extra buffs will make it __more likely__ for you to have a higher DPS than what would have been possible without any of them.
