@@ -56,6 +56,8 @@ It is cope anyways.
 
 ## Affliction Warlocks Rankings (Top 300)
 
+> Full repository for Affliction Warlock: https://github.com/ForgeGit/lock_cope
+
 ![Full repository for Affliction Warlock: https://github.com/ForgeGit/lock_cope](https://raw.githubusercontent.com/ForgeGit/lock_cope/main/_img/Affli_Cope_2023_09_13_h17_m42.png)
 
 ## Recent Changelog
