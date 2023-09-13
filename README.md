@@ -6,7 +6,7 @@ _Vivax (Pagle-US) -_ `Discfordge` _(Discord)_
 
 This question, usually followed by looking at a couple top DPS logs <sup>(read: "Top parses" or "Top rankings")</sup> for your boss of preference, will lead to wildly over-represent what is not always proper examples of "good" class-specific gameplay, nor that of class-specific *min-maxing*.<sub>(regardless of it being personal/selfish *min-maxing* or not).</sub> 
 
-> "Wait, why is the #1 DPS on Gigachad not enchanted? What?"
+> "Wait, why is the #1 DPS on Gigachad not using enchants? What?"
 
 For example: Easy <sub>but *"extra"*</sub> things one can do for higher DPS <sup>(WCL parsing approved✅)</sup> such as using tailoring cloth-crafting buffs, pre-summoning guardians, or receiving external buffs (Power Infusion, Focus Magic, among others) should always be a DPS increase <sub>*minor or major*</sub>, and you will see them being used in **__"some"__** of the top rankings logs. However, this won't always be the case.
 
@@ -18,9 +18,9 @@ You don't **__"need"__** these things to have a higher DPS (you probably have ot
 <img src="_img/little_friends.jpg" /><br />
 *Figure 2: ~170 DPS over a 2:22 minutes fight? Sounds good to me, idk about you<br />Source: https://classic.warcraftlogs.com/reports/a:bBYJa6GTdQrMm8y2#fight=3&type=damage-done&source=8*
 
-It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies might be more obvious than other, and usually rely on "manually checking logs".
+It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies might be more common (or important?) than others. This task of *glancing* over logs usually rely on manually opening one by one, a couple logs if not a few more.
 
-A lot of the time some of the things you see in top parses would be impossible for the average raid-comp.<br />For example, class-stacking sometimes is needed to meet specific DPS threshold to skip entire mechanics or boss phases.
+Sometimes it is also easy to overlook things you see in top parses would be impossible for the average raid-comp.<br />For example, class-stacking sometimes is needed to meet specific DPS threshold to skip entire mechanics or boss phases.
 
 <img src="_img/rogue_stack_twins.png" /><br />
 *Figure 3: Example of a "normal" raid comp for Twins Valk'yr: https://classic.warcraftlogs.com/reports/yn72Dgwq3fc41d9B#fight=30&type=damage-done<br/>Shared by Simonize in his discord*
