@@ -50,9 +50,11 @@ It is cope anyways.
 2. [Mage](#)<br>
 
 
-## Mage Rankings (Top 500)
+## Mage Rankings (Top 300)
 
-<img src="_img/Mage_Cope.png" /><br />
+> Full repository for Mage: https://github.com/ForgeGit/mage_cope
+
+![Full repository for Mage: https://github.com/ForgeGit/lock_cope](https://raw.githubusercontent.com/ForgeGit/mage_cope/main/_img/mage_Cope_2023_09_13_h21_m14.png)
 
 ## Affliction Warlocks Rankings (Top 300)
 
