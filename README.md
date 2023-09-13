@@ -18,7 +18,7 @@ You don't **__"need"__** these things to have a higher DPS (you probably have ot
 <img src="_img/little_friends.jpg" /><br />
 *Figure 2: ~170 DPS over a 2:22 minutes fight? Sounds good to me, idk about you<br />Source: https://classic.warcraftlogs.com/reports/a:bBYJa6GTdQrMm8y2#fight=3&type=damage-done&source=8*
 
-It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies might be more common (or important?) than others. This task of *glancing* over logs usually rely on manually opening one by one, a couple logs if not a few more.
+It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies might be more common (or important?) than others. This task of *glancing* over logs usually rely on manually opening logs/rankings one by one, for only a couple logs if not a few more of them.
 
 Sometimes it is also easy to overlook things you see in top parses would be impossible for the average raid-comp.<br />For example, class-stacking sometimes is needed to meet specific DPS threshold to skip entire mechanics or boss phases.
 
