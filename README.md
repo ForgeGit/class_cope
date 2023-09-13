@@ -73,6 +73,11 @@ It is cope anyways.
 ![Full repository for Shadow Priest: https://github.com/ForgeGit/priest_cope](https://raw.githubusercontent.com/ForgeGit/priest_cope/main/_img/spriest_Cope_2023_09_13_h23_m56.png)
 
 
+## Balance Druid Rankings (Top 300)
+
+> Full repository for Balance Druid: https://github.com/ForgeGit/druid_cope
+
+![Full repository for Shadow Priest: https://github.com/ForgeGit/druid_cope](https://raw.githubusercontent.com/ForgeGit/druid_cope/main/_img/balance_Cope_2023_09_14_h01_m46.png)
 
 
 ## Recent Changelog
@@ -81,7 +86,7 @@ It is cope anyways.
         - Affliction buff metrics were under reporting FM and Tailoring buffs. (Fixed)
         - Mage buff metrics were under reporting Tailoring buffs. (Fixed)
         - Mage main "infographic" was updated to better resolution for discord sharing. (?) (Fixed)
-        - Added Spriest.
+        - Added Spriest and Boomie
         
 ## To-dos?
 
