@@ -8,7 +8,7 @@ This question, usually followed by looking at a couple top DPS logs <sup>(read: 
 
 > "Wait, why is the #1 DPS on Gigachad not using enchants? What?"
 
-For example: Easy <sub>but *"extra"*</sub> things one can do for higher DPS <sup>(WCL parsing approved✅)</sup> such as using tailoring cloth-crafting buffs, pre-summoning guardians, or receiving external buffs (Power Infusion, Focus Magic, among others) should in theory always be a DPS increase <sub>*minor or major*</sub>, and you will see them being used in **__"some"__** of the top rankings logs. However, this won't always be the case.
+For example: Easy <sub>but *"extra"*</sub> things one can do for higher DPS <sup>(WCL parsing approved✅)</sup> such as using tailoring cloth-crafting buffs, pre-summoning guardians, or receiving external buffs (Power Infusion, Focus Magic, among others) should in theory always be a DPS increase <sub>*minor or major*</sub>, and you will see them being used in **__"some"__**, but not all, of top rankings logs.
 
 <img src="_img/tentacle_weave_resize.jpg" /><br />
 *Figure 1: My brother in Thrall, may I introduce you to my lord and savior, Vanquished Clutches of Yogg-Saron?*
