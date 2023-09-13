@@ -54,7 +54,7 @@ It is cope anyways.
 
 <img src="_img/Mage_Cope.png" /><br />
 
-## Affliction Warlocks Rankings (Top 500)
+## Affliction Warlocks Rankings (Top 300)
 
 <img src="_img/Affli_Ranking3.png" /><br />
 
@@ -64,3 +64,7 @@ It is cope anyways.
 13/09/2023: 
         - Affliction buff metrics were under reporting FM and Tailoring buffs (Fixed)
 
+## To-dos?
+
+- Date distribution in which the parses ocurred. 
+- ?????
