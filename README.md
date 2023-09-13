@@ -34,10 +34,11 @@ While not necessarily the "majority", in some cases this was done to "compensate
 
 It can be useful and interesting to use data from the top rankings/parsing/logs to see trends and some curious min-maxing techniques, however one has to be careful on how this can or not be extrapolated more generally.
 
-Not all top rankings are the result of "good class-specific gameplay", or extremely sweaty class-specific min-maxing.<br /> 
-A lot of the times, other raid-wide factors influence your ranking much more than individual decisions or buff assignments. (Fight length, class comp, raid-wide buffs and debuffs).
+Not all top rankings are solely attributed to "exceptional class-specific gameplay" or intense min-maxing.<br /> 
+Frequently, other raid-wide factors impact your ranking much more than individual decisions or buff assignments.<br />
+Or, maybe they simply are better (git gud).
 
-This is why this is called the **__cope collection__**.
+The following data collection is called the **__cope collection__**.
 
 Choose whatever metric you like and use it to argue about it however you like. 
 
