@@ -13,7 +13,7 @@ For example: Easy <sub>but *"extra"*</sub> things one can do for higher DPS <sup
 <img src="_img/tentacle_weave_resize.jpg" /><br />
 *Figure 1: My brother in Thrall, may I introduce you to my lord and savior, Vanquished Clutches of Yogg-Saron?*
 
-You don't **__"need"__** these things to have a higher DPS (you probably have other much more important things that you should fix first), however can add to your DPS <sub>(*min-max?*)</sub> with some of these extra buffs, which will make it **__"more likely"__** for you to have a higher DPS than what would have been possible without any of them. <sub>*(until a bad RNG and bad proc lineup makes you call for a wipe)*</sub>
+You don't **__"need"__** these things to have a higher DPS (you probably have other much more important things that you should fix first), however can add to your DPS with them <sub>(*min-max?*)</sub>, which will make it **__"more likely"__** for you to have a higher DPS than what would have been possible without any of them. <sub>*(until a bad RNG and bad proc lineup makes you call for a wipe)*</sub>
 
 <img src="_img/little_friends.jpg" /><br />
 *Figure 2: ~170 DPS over a 2:22 minutes fight? Sounds good to me, idk about you<br />Source: https://classic.warcraftlogs.com/reports/a:bBYJa6GTdQrMm8y2#fight=3&type=damage-done&source=8*
