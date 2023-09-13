@@ -62,12 +62,25 @@ It is cope anyways.
 
 ![Full repository for Affliction Warlock: https://github.com/ForgeGit/lock_cope](https://raw.githubusercontent.com/ForgeGit/lock_cope/main/_img/Affli_Cope_2023_09_13_h17_m42.png)
 
+
+## Shadow Priest Rankings (Top 300)
+
+> Full repository for Shadow Priest: https://github.com/ForgeGit/priest_cope
+
+![Full repository for Shadow Priest: https://github.com/ForgeGit/priest_cope](https://raw.githubusercontent.com/ForgeGit/priest_cope/main/_img/spriest_Cope_2023_09_13_h23_m56.png)
+
+
+
+
 ## Recent Changelog
 
 13/09/2023: 
-        - Affliction buff metrics were under reporting FM and Tailoring buffs (Fixed)
-
+        - Affliction buff metrics were under reporting FM and Tailoring buffs. (Fixed)
+        - Mage buff metrics were under reporting Tailoring buffs. (Fixed)
+        - Mage main "infographic" was updated to better resolution for discord sharing. (?) (Fixed)
+        - Added Spriest.
+        
 ## To-dos?
 
-- Date distribution in which the parses ocurred. 
+- Date distribution in which the parses occurred. 
 - ?????
