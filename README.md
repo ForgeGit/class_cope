@@ -18,9 +18,9 @@ You don't **__"need"__** these things to have a higher DPS (you probably have ot
 <img src="_img/little_friends.jpg" /><br />
 *Figure 2: ~170 DPS over a 2:22 minutes fight? Sounds good to me, idk about you<br />Source: https://classic.warcraftlogs.com/reports/a:bBYJa6GTdQrMm8y2#fight=3&type=damage-done&source=8*
 
-It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies tend to be more common (or important?) than others. This task of *glancing* over logs usually rely on manually opening logs/rankings one by one, for only a couple logs if not a few more.
+It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies tend to be more common (or important?) than others. This task of *glancing* over logs usually rely on manually opening logs/rankings one by one, for only a couple logs if not a few more, and while doing so it is bound to overlook other factors.
 
-While doing so, it is easy to overlook that some of the things you see in top parses would sometimes be impossible for the average raid-comp to afford.<br />For example, class-stacking sometimes is needed to meet specific DPS thresholds to skip entire mechanics or boss phases. You could die (in-game) and still rank decently welll.
+Some of the things you see in top parses would sometimes be impossible for the average raid-comp to afford.<br />For example, class-stacking sometimes is needed to meet specific DPS thresholds to skip entire mechanics or boss phases. You could die (in-game) and still rank decently welll.
 
 <img src="_img/rogue_stack_twins.png" /><br />
 *Figure 3: Example of a "normal" raid comp for Twins Valk'yr: https://classic.warcraftlogs.com/reports/yn72Dgwq3fc41d9B#fight=30&type=damage-done<br/>Shared by Simonize in his discord*
