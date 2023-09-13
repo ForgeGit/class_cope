@@ -8,19 +8,21 @@ This question, usually followed by looking at a couple top DPS logs <sup>(read: 
 
 > "Wait, why is the #1 DPS on Gigachad not using enchants? What?"
 
-For example: Easy <sub>but *"extra"*</sub> things one can do for higher DPS <sup>(WCL parsing approved✅)</sup> such as using tailoring cloth-crafting buffs, pre-summoning guardians, or receiving external buffs (Power Infusion, Focus Magic, among others) should always be a DPS increase <sub>*minor or major*</sub>, and you will see them being used in **__"some"__** of the top rankings logs. However, this won't always be the case.
+For example: Easy <sub>but *"extra"*</sub> things one can do for higher DPS <sup>(WCL parsing approved✅)</sup> such as using tailoring cloth-crafting buffs, pre-summoning guardians, or receiving external buffs (Power Infusion, Focus Magic, among others) should in theory always be a DPS increase <sub>*minor or major*</sub>, and you will see them being used in **__"some"__** of the top rankings logs. However, this won't always be the case.
 
 <img src="_img/tentacle_weave_resize.jpg" /><br />
 *Figure 1: My brother in Thrall, may I introduce you to my lord and savior, Vanquished Clutches of Yogg-Saron?*
 
-You don't **__"need"__** these things to have a higher DPS (you probably have other much more important things that you should fix first), however you could add to your DPS (*min-maxing*) with some of these extra buffs, which will make it __more likely__ for you to have a higher DPS than what would have been possible without any of them. <sub>*(until a bad RNG and bad proc lineup makes you call for a wipe)*</sub>
+You don't **__"need"__** these things to have a higher DPS (you probably have other much more important things that you should fix first), however you could add to your DPS (*min-maxing?*) with some of these extra buffs, which will make it __more likely__ for you to have a higher DPS than what would have been possible without any of them. <sub>*(until a bad RNG and bad proc lineup makes you call for a wipe)*</sub>
 
 <img src="_img/little_friends.jpg" /><br />
 *Figure 2: ~170 DPS over a 2:22 minutes fight? Sounds good to me, idk about you<br />Source: https://classic.warcraftlogs.com/reports/a:bBYJa6GTdQrMm8y2#fight=3&type=damage-done&source=8*
 
-It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies tend to be more common (or important?) than others. This task of *glancing* over logs usually rely on manually opening logs/rankings one by one, for only a couple logs if not a few more, and while doing so it is bound to overlook other factors.
+It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies tend to be more common (or important?) than others. 
 
-Some of the things you see in top parses would sometimes be impossible for the average raid-comp to afford.<br />For example, class-stacking sometimes is needed to meet specific DPS thresholds to skip entire mechanics or boss phases. You could die (in-game) and still rank decently welll.
+When looking for what top rankings are doing "different", one tends to *glance* over logs and sometimes miss important raid-wide factors that contributed to that ranking being possible.
+
+For example, class-stacking sometimes is needed to meet specific DPS thresholds to skip entire mechanics or boss phases. You could die (in-game) before the end of the fight and still rank decently well.
 
 <img src="_img/rogue_stack_twins.png" /><br />
 *Figure 3: Example of a "normal" raid comp for Twins Valk'yr: https://classic.warcraftlogs.com/reports/yn72Dgwq3fc41d9B#fight=30&type=damage-done<br/>Shared by Simonize in his discord*
@@ -46,8 +48,9 @@ It is cope anyways.
 
 # Table of Contents 📜
 
-1. [Affliction Lock](#)<br>
+1. [Affli](#)<br>
 2. [Mage](#)<br>
+2. [Spriest](#)<br>
 
 
 ## Mage Rankings (Top 300)
