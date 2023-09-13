@@ -56,4 +56,11 @@ It is cope anyways.
 
 ## Affliction Warlocks Rankings (Top 500)
 
-<img src="_img/Affli_Ranking2.png" /><br />
+<img src="_img/Affli_Ranking3.png" /><br />
+
+
+## Recent Changelog
+
+13/09/2023: 
+        - Affliction buff metrics were under reporting FM and Tailoring buffs (Fixed)
+
