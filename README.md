@@ -55,4 +55,4 @@ It is cope anyways.
 
 ## Affliction Warlocks Rankings (Top 500)
 
-<img src="_img/Affli_Ranking.png" /><br />
+<img src="_img/Affli_Ranking2.png" /><br />
