@@ -20,7 +20,7 @@ You don't **__"need"__** these things to have a higher DPS (you probably have ot
 
 It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies might be more common (or important?) than others. This task of *glancing* over logs usually rely on manually opening logs/rankings one by one, for only a couple logs if not a few more of them.
 
-Sometimes it is also easy to overlook things you see in top parses would be impossible for the average raid-comp.<br />For example, class-stacking sometimes is needed to meet specific DPS threshold to skip entire mechanics or boss phases.
+While doing so, it is easy to overlook things you see in top parses that would be impossible for the average raid-comp to afford.<br />For example, class-stacking sometimes is needed to meet specific DPS threshold to skip entire mechanics or boss phases.
 
 <img src="_img/rogue_stack_twins.png" /><br />
 *Figure 3: Example of a "normal" raid comp for Twins Valk'yr: https://classic.warcraftlogs.com/reports/yn72Dgwq3fc41d9B#fight=30&type=damage-done<br/>Shared by Simonize in his discord*
