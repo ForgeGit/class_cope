@@ -5,9 +5,9 @@ _Vivax (Pagle-US) -_ `Discfordge` _(Discord)_
 World of Warcraft: Classic<br />
 Wrath of the Lich King (WOTLK)
 
-[Jump to Top 300 Ranking graphics](#table-of-contents-)<br/>
+[⬇️Jump to Top 300 DPS Ranking metrics](#table-of-contents-)<br/>
 or<br/>
-Keep reading 
+Keep reading ¯\_ (ツ)_/¯
 
 ## 🥈Preamble🥈
 
