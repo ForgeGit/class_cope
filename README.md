@@ -18,21 +18,24 @@ You don't **__"need"__** these things to have a higher DPS (you probably have ot
 <img src="_img/little_friends.jpg" /><br />
 *Figure 2: ~170 DPS over a 2:22 minutes fight? Sounds good to me, idk about you<br />Source: https://classic.warcraftlogs.com/reports/a:bBYJa6GTdQrMm8y2#fight=3&type=damage-done&source=8*
 
-It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some min-maxing strategies tend to be more common than others, and not all of them will be as impactful. 
+It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some min-maxing strategies tend to be more common than others, and not all of them will be as impactful.
+
+<img src="_img/ahlejandro_ulduar.png" /><br />
+*Figure 4: During the first weeks of Ulduar P2 (WOTLK Classc), Ahlejandro weapon did not had the best enchant available. He ranked #1 on Hodir.*
 
 Another issue when looking for what the top rankings are doing "different" by *glancing* over their logs is that we might fail to notice critical raid-wide factors that contributed to that ranking being possible.
 
 For example, class-stacking sometimes is needed to meet specific DPS thresholds to skip entire mechanics or boss phases. You could die (in-game) before the end of the fight and still rank decently well.
 
 <img src="_img/rogue_stack_twins.png" /><br />
-*Figure 3: Example of a "normal" raid comp for Twins Valk'yr: https://classic.warcraftlogs.com/reports/yn72Dgwq3fc41d9B#fight=30&type=damage-done<br/>Shared by Simonize in his discord*
+*Figure 5: Example of a "normal" raid comp for Twins Valk'yr: https://classic.warcraftlogs.com/reports/yn72Dgwq3fc41d9B#fight=30&type=damage-done<br/>Shared by Simonize in his discord*
 
 Back in World of Warcraft: Classic - The Burning Crusade (TBC), when we were able to receive multiple Lusts per fight and [before the PI External Cap was implemented](https://articles.classic.warcraftlogs.com/news/classic-blog-externals-cap-and-more), you could see some top rankings stacking as many external buffs as possible
 
 While they were not the majority, in some cases you would see them grossly misplaying their class, and what would have meant losing any chance at achieving a high ranking by an average player, those stacking buffs easily "compensated". 
 
 <img src="_img/externals_TBC.png" /><br />
-*Figure 4: You may not like it, but this is what peak TBC parsing looks like*
+*Figure 6: You may not like it, but this is what peak TBC parsing looks like*
 
 It can be useful and interesting to use data from the top rankings/parsing/logs to see trends and some curious min-maxing techniques, however one has to be careful on how this can or not be extrapolated more generally.
 
