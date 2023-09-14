@@ -32,7 +32,7 @@ For example, class-stacking sometimes is needed to meet specific DPS thresholds 
 
 Back in World of Warcraft: Classic - The Burning Crusade (TBC), when we were able to receive multiple Lusts per fight and [before the PI External Cap was implemented](https://articles.classic.warcraftlogs.com/news/classic-blog-externals-cap-and-more), you could see some top rankings stacking as many external buffs as possible
 
-While they were not the majority, in some cases you would see them grossly misplaying their class, and what would have meant losing any chance at achieving a high ranking by an average player, those stacking buffs easily "compensated". 
+While they were not the majority, in some cases you would see them grossly misplaying their class, and what would have meant losing any chance at achieving a high ranking by an average player, those stacking buffs easily "compensated" for it. 
 
 <img src="_img/externals_TBC.png" /><br />
 *Figure 5: You may not like it, but this is what peak TBC parsing looks like*
