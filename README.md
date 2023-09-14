@@ -18,9 +18,9 @@ You don't **__"need"__** these things to have a higher DPS (you probably have ot
 <img src="_img/little_friends.jpg" /><br />
 *Figure 2: ~170 DPS over a 2:22 minutes fight? Sounds good to me, idk about you<br />Source: https://classic.warcraftlogs.com/reports/a:bBYJa6GTdQrMm8y2#fight=3&type=damage-done&source=8*
 
-It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some strategies tend to be more common (or important?) than others. 
+It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some min-maxing strategies tend to be more common than others, and not all of them will be as impactful. 
 
-When looking for what top rankings are doing "different", one tends to *glance* over logs and sometimes miss important raid-wide factors that contributed to that ranking being possible.
+Another issue when looking for what the top rankings are doing "different" by *glancing* over logs is that we might overlook critical raid-wide factors that contributed to that ranking being possible.
 
 For example, class-stacking sometimes is needed to meet specific DPS thresholds to skip entire mechanics or boss phases. You could die (in-game) before the end of the fight and still rank decently well.
 
