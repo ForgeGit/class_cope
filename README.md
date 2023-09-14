@@ -2,6 +2,9 @@
 
 _Vivax (Pagle-US) -_ `Discfordge` _(Discord)_
 
+
+## 🥈Preamble🥈
+
 > "What are the top DPS rankings for my class doing?"
 
 This question, usually followed by looking at a couple top DPS logs <sup>(read: "Top parses" or "Top rankings")</sup> for your boss of preference, will lead to wildly over-represent what is not always a proper example of "good" class-specific gameplay, nor that of class-specific *min-maxing*.<sub>(regardless of it being personal/selfish *min-maxing* or not).</sub> 
@@ -44,6 +47,8 @@ Frequently, other raid-wide factors impact your ranking much more than individua
 Or, maybe, just maybe, they simply are better than you (git gud).
 <sub>~~you could also conspire about a lot of logs possibly being massively AI generated but we will never know~~</sub>
 
+## 🥉Introduction🥉
+
 The following data collection is called the **__cope collection__**.
 
 Choose whatever metric you like and use it to argue about it however you like. 
@@ -52,36 +57,37 @@ It is cope anyways.
 
 # Table of Contents 📜
 
-1. [Affli](#)<br>
-2. [Mage](#)<br>
-2. [Spriest](#)<br>
+1. [Mages](#mage-rankings-top-300)<br>
+2. [Affliction Warlocks](#affliction-warlocks-rankings-top-300)<br>
+3. [Shadow Priests](#shadow-priest-rankings-top-300)<br>
+4. [Balance Druids](#balance-druid-rankings-top-300)<br>
 
 
 ## Mage Rankings (Top 300)
 
 > Full repository for Mage: https://github.com/ForgeGit/mage_cope
 
-![Full repository for Mage: https://github.com/ForgeGit/lock_cope](https://raw.githubusercontent.com/ForgeGit/mage_cope/main/_img/mage_Cope_2023_09_14_h00_m01.png)
+![Full repository (code) for Mage: https://github.com/ForgeGit/lock_cope](https://raw.githubusercontent.com/ForgeGit/mage_cope/main/_img/mage_Cope_2023_09_14_h00_m01.png)
 
 ## Affliction Warlocks Rankings (Top 300)
 
 > Full repository for Affliction Warlock: https://github.com/ForgeGit/lock_cope
 
-![Full repository for Affliction Warlock: https://github.com/ForgeGit/lock_cope](https://raw.githubusercontent.com/ForgeGit/lock_cope/main/_img/Affli_Cope_2023_09_13_h17_m42.png)
+![Full repository (code) for Affliction Warlock: https://github.com/ForgeGit/lock_cope](https://raw.githubusercontent.com/ForgeGit/lock_cope/main/_img/Affli_Cope_2023_09_13_h17_m42.png)
 
 
 ## Shadow Priest Rankings (Top 300)
 
 > Full repository for Shadow Priest: https://github.com/ForgeGit/priest_cope
 
-![Full repository for Shadow Priest: https://github.com/ForgeGit/priest_cope](https://raw.githubusercontent.com/ForgeGit/priest_cope/main/_img/spriest_Cope_2023_09_13_h23_m56.png)
+![Full repository (code) for Shadow Priest: https://github.com/ForgeGit/priest_cope](https://raw.githubusercontent.com/ForgeGit/priest_cope/main/_img/spriest_Cope_2023_09_13_h23_m56.png)
 
 
 ## Balance Druid Rankings (Top 300)
 
 > Full repository for Balance Druid: https://github.com/ForgeGit/druid_cope
 
-![Full repository for Shadow Priest: https://github.com/ForgeGit/druid_cope](https://raw.githubusercontent.com/ForgeGit/druid_cope/main/_img/balance_Cope_2023_09_14_h01_m46.png)
+![Full repository (code) for Shadow Priest: https://github.com/ForgeGit/druid_cope](https://raw.githubusercontent.com/ForgeGit/druid_cope/main/_img/balance_Cope_2023_09_14_h01_m46.png)
 
 
 ## Recent Changelog
