@@ -11,7 +11,7 @@ Keep reading`¯\_ (ツ)_/¯`
 
 ## 🥈Preamble🥈
 
-> "What are the top DPS rankings for my class doing?"
+> "What are the top DPS players for my class doing?"
 
 This question, usually followed by looking at a couple top DPS logs <sup>(read: "Top parses" or "Top rankings")</sup> for your boss of preference, will lead to wildly over-represent what is not always a proper example of "good" class-specific gameplay, nor that of class-specific *min-maxing*.<sub>(regardless of it being personal/selfish *min-maxing* or not).</sub> 
 
@@ -22,7 +22,7 @@ For example: Easy <sub>but *"extra"*</sub> things one can do for higher DPS <sup
 <img src="_img/tentacle_weave_resize.jpg" /><br />
 *Figure 1: My brother in Thrall, may I introduce you to my lord and savior, Vanquished Clutches of Yogg-Saron?*
 
-You don't **__"need"__** these things to have a higher DPS (you probably have other much more important things that you should fix first), however can add to your DPS with them <sub>(*min-max?*)</sub>, which will make it **__"more likely"__** for you to have a higher DPS than what would have been possible without any of them. <sub>*(until a bad RNG and bad proc lineup makes you call for a wipe)*</sub>
+You don't **__"need"__** these things to have a higher DPS (you probably have other much more important things that you should fix first), however you can add to your DPS with them <sub>(*min-max?*)</sub>, which will make it **__"more likely"__** for you to have a higher DPS than what would have been possible without any of them. <sub>*(until a bad RNG and bad proc lineup makes you call for a wipe)*</sub>
 
 <img src="_img/little_friends.jpg" /><br />
 *Figure 2: ~170 DPS over a 2:22 minutes fight? Sounds good to me, idk about you<br />Source: https://classic.warcraftlogs.com/reports/a:bBYJa6GTdQrMm8y2#fight=3&type=damage-done&source=8*
@@ -32,7 +32,7 @@ It is easy to assume the majority of top rankings are doing everything in their 
 <img src="_img/ahlejandro_ulduar.png" /><br />
 *Figure 3: During the first weeks of Ulduar P2 (WOTLK Classc), Ahlejandro weapon did not had the best enchant available. He ranked #1 on Hodir.*
 
-Another issue when looking for what the top rankings are doing "different" by *glancing* over their logs is that we might fail to notice critical raid-wide factors that contributed to that ranking being possible.
+Another issue when looking for what the top rankings are doing "different" by *glancing* over their logs is that we might fail to recognize critical raid-wide factors that contributed to that ranking being possible.
 
 For example, class-stacking sometimes is needed to meet specific DPS thresholds to skip entire mechanics or boss phases. You could die (in-game) before the end of the fight and still rank decently well.
 
