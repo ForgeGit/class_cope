@@ -20,16 +20,16 @@ You don't **__"need"__** these things to have a higher DPS (you probably have ot
 
 It is easy to assume the majority of top rankings are doing everything in their hand to maximize their DPS, but some min-maxing strategies tend to be more common than others, and not all of them will be as impactful. 
 
-Another issue when looking for what the top rankings are doing "different" by *glancing* over logs is that we might overlook critical raid-wide factors that contributed to that ranking being possible.
+Another issue when looking for what the top rankings are doing "different" by *glancing* over their logs is that we might fail to notice critical raid-wide factors that contributed to that ranking being possible.
 
 For example, class-stacking sometimes is needed to meet specific DPS thresholds to skip entire mechanics or boss phases. You could die (in-game) before the end of the fight and still rank decently well.
 
 <img src="_img/rogue_stack_twins.png" /><br />
 *Figure 3: Example of a "normal" raid comp for Twins Valk'yr: https://classic.warcraftlogs.com/reports/yn72Dgwq3fc41d9B#fight=30&type=damage-done<br/>Shared by Simonize in his discord*
 
-Back in World of Warcraft: Classic - The Burning Crusade (TBC), when you could stack lust one after another, you would see some top rankings stacking externals. 
+Back in World of Warcraft: Classic - The Burning Crusade (TBC), when we were able to receive multiple Lusts per fight and [before the PI External Cap was implemented](https://articles.classic.warcraftlogs.com/news/classic-blog-externals-cap-and-more), you could see some top rankings stacking as many external buffs as possible
 
-While not necessarily the "majority", in some cases this was done to "compensate"" for lack of skill or better raiders. <sub>~~Or you could say that maybe a lot of logs are massively AI generated and we don't know~~</sub>
+While they were not the majority, in some cases you would see them grossly misplaying their class, and what would have meant losing any chance at achieving a high ranking by an average player, those stacking buffs easily "compensated". 
 
 <img src="_img/externals_TBC.png" /><br />
 *Figure 4: You may not like it, but this is what peak TBC parsing looks like*
@@ -38,7 +38,8 @@ It can be useful and interesting to use data from the top rankings/parsing/logs 
 
 Not all top rankings are solely attributed to "exceptional class-specific gameplay" or intense min-maxing.<br /> 
 Frequently, other raid-wide factors impact your ranking much more than individual decisions or buff assignments.<br />
-Or, maybe they simply are better (git gud).
+Or, maybe, just maybe, they simply are better than you(git gud).
+<sub>~~you could also conspire about a lot of logs possibly being massively AI generated but we will never know~~</sub>
 
 The following data collection is called the **__cope collection__**.
 
