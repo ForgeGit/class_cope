@@ -110,4 +110,9 @@ It is cope anyways.
 ## To-dos?
 
 - Date distribution in which the parses occurred. 
-- ?????
+
+- Buff and debuff uptimes + dmg:
+    - Affliction Warlock: Drainsoul Usage; haunt uptime, corr at 35%
+    - Balance Druid: Owlkin frenzy uptime   
+    
+- Gearscore/Items
