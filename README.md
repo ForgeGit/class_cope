@@ -1,6 +1,6 @@
 # 🥇Top ranking cope🥇<br/>
 
-_Vivax (Pagle-US) -_ `Discfordge` _(Discord)_
+_Vivax (Pagle-US) -_ `Discfordge` _(Discord)_+++++++++++++++++
 
 World of Warcraft: Classic<br />
 Wrath of the Lich King (WOTLK)
@@ -94,11 +94,14 @@ It is cope anyways.
 
 ## Recent Changelog
 
-13/09/2023: 
-        - Affliction buff metrics were under reporting FM and Tailoring buffs. (Fixed)
-        - Mage buff metrics were under reporting Tailoring buffs. (Fixed)
-        - Mage main "infographic" was updated to better resolution for discord sharing. (?) (Fixed)
-        - Added Spriest and Boomie
+- 13/09/2023: 
+    - Affliction buff metrics were under reporting FM and Tailoring buffs. (Fixed)
+        
+    - Mage buff metrics were under reporting Tailoring buffs. (Fixed)
+        
+    - Mage main "infographic" was updated to better resolution for discord sharing. (?) (Fixed)
+        
+    - Added Spriest and Boomie
         
 ## To-dos?
 
