@@ -1,6 +1,6 @@
 # 🥇Top ranking cope🥇<br/>
 
-_Vivax (Pagle-US) -_ `Discfordge` _(Discord)_+++++++++++++++++
+_Vivax (Pagle-US) -_ `Discfordge` _(Discord)_
 
 World of Warcraft: Classic<br />
 Wrath of the Lich King (WOTLK)
