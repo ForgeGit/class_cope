@@ -41,7 +41,7 @@ It can be useful and interesting to use data from the top rankings/parsing/logs 
 
 Not all top rankings are solely attributed to "exceptional class-specific gameplay" or intense min-maxing.<br /> 
 Frequently, other raid-wide factors impact your ranking much more than individual decisions or buff assignments.<br />
-Or, maybe, just maybe, they simply are better than you(git gud).
+Or, maybe, just maybe, they simply are better than you (git gud).
 <sub>~~you could also conspire about a lot of logs possibly being massively AI generated but we will never know~~</sub>
 
 The following data collection is called the **__cope collection__**.
