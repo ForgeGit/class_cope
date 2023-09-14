@@ -37,7 +37,7 @@ While they were not the majority, in some cases you would see them grossly mispl
 <img src="_img/externals_TBC.png" /><br />
 *Figure 5: You may not like it, but this is what peak TBC parsing looks like*
 
-It can be useful and interesting to use data from the top rankings/parsing/logs to see trends and some curious min-maxing techniques, however one has to be careful on how this can or not be extrapolated more generally.
+It can be useful and interesting to use data from the top rankings/parsing/logs to see trends and the extend of some min-maxing techniques, however one has to be careful on how this can or not be extrapolated more generally.
 
 Not all top rankings are solely attributed to "exceptional class-specific gameplay" or intense min-maxing.<br /> 
 Frequently, other raid-wide factors impact your ranking much more than individual decisions or buff assignments.<br />
