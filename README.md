@@ -73,27 +73,27 @@ It is cope anyways.
 
 > Full repository for Mage: https://github.com/ForgeGit/mage_cope
 
-![Full repository (code) for Mage: https://github.com/ForgeGit/mage_cope](https://raw.githubusercontent.com/ForgeGit/mage_cope/main/_img/mage_Cope_2023_09_14_h02_m45.png)
+![Full repository (code) for Mage: https://github.com/ForgeGit/mage_cope](https://raw.githubusercontent.com/ForgeGit/class_cope/main/mage_Cope_2023_09_14_h02_m45.png)
 
 ## Affliction Warlocks Rankings (Top 300)
 
 > Full repository for Affliction Warlock: https://github.com/ForgeGit/lock_cope
 
-![Full repository (code) for Affliction Warlock: https://github.com/ForgeGit/lock_cope](https://raw.githubusercontent.com/ForgeGit/lock_cope/main/_img/Affli_Cope_2023_09_13_h17_m42.png)
+![Full repository (code) for Affliction Warlock: https://github.com/ForgeGit/lock_cope](https://raw.githubusercontent.com/ForgeGit/class_cope/main/Affli_Cope_2023_09_13_h17_m42.png)
 
 
 ## Shadow Priest Rankings (Top 300)
 
 > Full repository for Shadow Priest: https://github.com/ForgeGit/priest_cope
 
-![Full repository (code) for Shadow Priest: https://github.com/ForgeGit/priest_cope](https://raw.githubusercontent.com/ForgeGit/priest_cope/main/_img/spriest_Cope_2023_09_14_h02_m44.png)
+![Full repository (code) for Shadow Priest: https://github.com/ForgeGit/priest_cope](https://raw.githubusercontent.com/ForgeGit/class_cope/main/spriest_Cope_2023_09_14_h02_m44.png)
 
 
 ## Balance Druid Rankings (Top 300)
 
 > Full repository for Balance Druid: https://github.com/ForgeGit/druid_cope
 
-![Full repository (code) for Shadow Priest: https://github.com/ForgeGit/druid_cope](https://raw.githubusercontent.com/ForgeGit/druid_cope/main/_img/balance_Cope_2023_09_14_h02_m43.png)
+![Full repository (code) for Shadow Priest: https://github.com/ForgeGit/druid_cope](https://raw.githubusercontent.com/ForgeGit/class_cope/main/balance_Cope_2023_09_14_h02_m43.png)
 
 
 ## Recent Changelog
